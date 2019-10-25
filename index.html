@@ -15,22 +15,11 @@
     <div class="container" id="index">
       <div id="heading">
         <div class="row mb-3">
-          <div class="col-12 d-flex justify-content-around mt-4">
+          <div class="col-8 d-flex justify-content-around mt-4">
             <h1>digimart</h1>
           </div>
-        </div>
 
-        <div class="row mt-4 ">
-          <div id="searchForm" class="col-9 d-flex flex-row align-items-center">
-            <form class="input-group border-bottom ml-2">
-              <div class="input-group-prepend">
-                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-               </div>
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
-
-          <div class="col-3">
+          <div class="col-4 d-flex justify-content-around mt-4">
               <button id="hamburgerNav" type="button" class="btn btn-link text-dark"><i class="fas fa-bars pl-4"></i></button>
           </div>
         </div>
@@ -171,9 +160,9 @@
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="card cardListStyle" id="cardModal">
+                <div class="card cardListStyle border-0" id="cardModal">
 
-                  <div id="listingImage" class="col-12"></div>
+                  <div id="listingImage" class="col-12 mt-3 mb-3"></div>
 
                   <div class="card-body d-flex justify-content-between flex-column p-1">
 
@@ -185,50 +174,26 @@
                       <p id="listingCardDescription"></p>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                       <small class="text-muted" id="resultPrice"></small>
                     </div>
-
-                    <div class="col-12 mt-2">
-                      <small class="text-success" id="resultSeller"></small>
-                    </div>
                   </div>
                 </div>
-                <!-- katherines comments here -->
-                <div class="row">
-                  <div class="col-12 mt-4">
-                    <div class="card cardListStyle" id="commentSection">
-                      <div class="input-group mb-3 p-3">
-                        <input type="text" class="form-control w-180 border-bottom" id="comments" rows="3" name="comments" placeholder="Add Comment Here">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-success" type="button" id="submitForm">comment</button>
-                        </div>
-                      </div>
 
-                      <div>
-                        <div id="commentsDisplay"></div>
-                      </div>
+                <div class="col-12">
+                  <div class="input-group w-100 p-3">
+                    <input type="text" class="form-control w-180 border-bottom" id="comments" rows="3" name="comments" placeholder="Add Comment Here">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-success" type="button" id="submitForm">comment</button>
                     </div>
                   </div>
-                </div>
-              </div>
-
-            <div class="input-group mb-3 px-2">
-              <input type="text" class="form-control w-180" id="comments" rows="3" name="comments" placeholder="Add Comment Here">
-              <div class="input-group-append">
-                <button class="btn btn-success" type="button" id="submitForm">Button</button>
-                <div class="row mt-2" id="userListingButtons">
-                  <div class="col-12">
-                    <div id="buttons" class="d-flex justify-content-around align-items-center flex-row p-3">
-                      <button type="button" class="btn btn-warning editBtn">Edit Listing</button>
-                      <button type="button" class="btn btn-danger deleteBtn">Delete Listing</button>
-                    </div>
+                  <div>
+                    <div id="commentsDisplay"></div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+              </div>
 
         <div class="modal fade" id="invalidModal" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
@@ -245,10 +210,6 @@
                 <a href="login.html"><button type="button" class="btn btn-success px-4">Login</button></a>
                 <a href="register.html"><button type="button" class="btn btn-outline-success px-4">Register</button></a>
               </div>
-
-            </div>
-            <div>
-              <div id="commentsDisplay"></div>
             </div>
           </div>
         </div>

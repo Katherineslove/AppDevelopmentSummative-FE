@@ -112,7 +112,7 @@ getListingData = () => {
     url: `${url}/allListings`,
     type: 'GET',
     success:function(result) {
-      // console.log(result[0]._id);
+      console.log(result[0]._id);
       // $('.listingDisplay').empty();
 
       for (var i = 0; i < result.length; i++) {

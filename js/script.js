@@ -39,8 +39,7 @@ $('#register').click(function() {
     },
     success:function(result){
       console.log(result);
-        $('#rego').addClass('d-none');
-        $('#signIn').removeClass('d-none');
+        
     },
     error: function(err) {
       console.log(`${url}/users`);
@@ -416,9 +415,7 @@ $('.listingDisplay').on('click', '#editListing', function() {
   // $('#listingCard').empty();
   $('.listingDisplay').append(`
     <div id="addlistingForm" class="d-none mt-4">
-
     </div>
-
     <div id="listingCard" class="col-md-4">
       <div class="card mb-4 shadow-sm">
         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
@@ -427,24 +424,20 @@ $('.listingDisplay').on('click', '#editListing', function() {
             <label for="editedName">Item Name</label>
             <input type="text" name="editedName" id="editedName" class="form-control">
           </div>
-
           <div class="form-group">
             <label for="editedPrice">Item Price</label>
             <input type="number" name="editedPrice" id="editedPrice" class="form-control">
           </div>
-
           <div class="form-group">
             <label for="editedDescription">Item Description</label>
             <textarea type="text" name="editedDescription" id="editedDescription" rows="3" class="form-control"></textarea>
           </div>
-
           <div class="mt-3">
             <button id="editNewListing" type="button" class="btn btn-success">Edit Listing</button>
           </div>
         </div>
       </div>
     </div>
-
   `);
 
 
@@ -514,33 +507,10 @@ $('#hamburgerNav').click(function(){
 
 // larissa untill here
 
-$('#login').click(function(){
-  $('#index').removeClass('d-none');
-  $('#signIn').addClass('d-none');
-  $('#rego').addClass('d-none');
-  $('#logBtn').addClass('d-none');
-  $('#regoBtn').addClass('d-none');
-  $('#logout').removeClass('d-none');
-});
-
-$('#logBtn').click(function(){
- $('#index').addClass('d-none');
- $('#signIn').removeClass('d-none');
- $('#logBtn').addClass('d-none');
- $('#regoBtn').addClass('d-none');
- $('#logout').removeClass('d-none');
-});
-
 $('#logout').click(function(){
  $('#logBtn').removeClass('d-none');
  $('#regoBtn').removeClass('d-none');
  $('#logout').addClass('d-none');
-});
-
-
-$('#regoBtn').click(function(){
- $('#index').addClass('d-none');
- $('#rego').removeClass('d-none');
 });
 
 $('.guest').click(function(){

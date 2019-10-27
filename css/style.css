@@ -223,6 +223,7 @@ li {
   background-image: url("../img/vege.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 #loginCard #gradient {
   width: 100%;
